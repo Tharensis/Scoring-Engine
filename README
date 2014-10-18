@@ -2,4 +2,10 @@ This program was designed as a scoring engine roughly equivalent to that used du
 
 If you find bugs or would like additional features, feel free to submit them via github.
 
-https://github.com/reedwilkins/Scoring-Engine
+For my purposes, the vagrantfile is enough to run this. 
+I supposed one could git clone into /vagrant. Then run /vagrant/bootstrap.sh and it would work.
+
+Just browse to setup.php and it will create the database, tables, and import a default sql dump file.
+
+add cron for the pollers when ready
+* * * * * /usr/bin/php /var/www/controller.php >> /var/www/cronout.log

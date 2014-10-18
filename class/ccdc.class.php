@@ -6,10 +6,14 @@ class ccdc
 	public static function pconnect()
 	{
 		// Get location of config file
-		if(file_exists('.config'))
-			{ $CONFIGFILE = '.config'; }
-		elseif(file_exists('../.config'))
-			{ $CONFIGFILE = '../.config'; }
+		if(file_exists('config.ini'))
+			{ $CONFIGFILE = 'config.ini'; }
+		elseif(file_exists('../class/config.ini'))
+			{ $CONFIGFILE = '../class/config.ini'; }
+		elseif(file_exists('class/config.ini'))
+			{ $CONFIGFILE = 'class/config.ini'; }
+		elseif(file_exists('/var/www/class/config.ini'))
+			{ $CONFIGFILE = '/var/www/class/config.ini'; }
 		else
 			{ die("Could not locate config file!\n"); }
 

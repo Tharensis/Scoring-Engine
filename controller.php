@@ -2,7 +2,8 @@
 
 <?
 require('class/ccdc.class.php');
-$basedir = dirname($_SERVER['PHP_SELF']) . '/pollers/';
+$basedir = '/var/www/pollers/';
+//$basedir = dirname($_SERVER['PHP_SELF']) . '/pollers/';
 print "\nPoller Path: $basedir \n";
 // Change max execution time to 1 minute
 set_time_limit(60);
