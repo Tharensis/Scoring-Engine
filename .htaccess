@@ -1,0 +1,4 @@
+<Directory  "/var/www/admin">
+  Order allow,deny
+  Deny from all
+</Directory>
